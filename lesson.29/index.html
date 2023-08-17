@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms 1-qism</title>
+        <style>
+            input[type=text], select, textarea{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 5px;
+                margin-bottom: 20px;
+                outline: none;
+            }
+
+            button{
+                width: 100%;
+                background-color: #2E856F;
+                color: white;
+                padding: 10 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;            
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/server.php" method="get">
+            <label for="Firstname">First name</label>
+            <input type="text" id="Firstname" name="Firstname" placeholder="enter your firstname">
+            <br>
+            <br>
+
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="enter your lastname">
+            <br>
+            <br>
+            <label for="country">Davlat</label>
+            <select type="text" id="country" name="country">
+                <option value="Uzbekistan">O'zbekiston</option>
+                <option value="USA">Amerika</option>
+                <option value="Russiya">Rossiya</option>
+                <option value="France">Fransiya</option>
+            </select>
+                <br>
+                <br>
+                <label for="massage">Massage</label>
+                <textarea name="massage" id="massage" cols="10" rows="5"></textarea>
+                <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
